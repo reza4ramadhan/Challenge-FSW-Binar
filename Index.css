@@ -63,6 +63,7 @@
     color: white;
     text-transform: capitalize;
     text-align: center;
+    text-decoration: none;
 }
 .scroll-down-icon{
     width: 70%;
