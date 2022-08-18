@@ -1,6 +1,7 @@
 body {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+    background-image:  url("assets/main-bg.jpg");
+    height: 100vh;
+    background-size: cover;
   }
   
   .btn-login {
