@@ -37,8 +37,14 @@
             </ul>
           </div>
           <div class="collapse navbar-collapse ml-2 nav-item justify-content-end" id="navbarSupportedContent">
-            <a class="d-flex nav-link text-white px-2" href="/register">Sign Up</a>
-            <a class="d-flex nav-link text-white px-2" href="/login">Login</a>
+            <% if (email.length>0) { %>
+              <a class="d-flex nav-link text-white px-2" href="/register"><%= email %></a>
+              <a class="d-flex nav-link text-white px-2" href="/logout">Log Out</a>
+            <% } %>
+            <% if (email.length===0) { %>
+              <a class="d-flex nav-link text-white px-2" href="/register">Sign Up</a>
+              <a class="d-flex nav-link text-white px-2" href="/login">Login</a>
+            <% } %>
           </div>
         </div>
     </nav>

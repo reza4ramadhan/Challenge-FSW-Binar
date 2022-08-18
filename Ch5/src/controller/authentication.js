@@ -34,6 +34,10 @@ class Authentication {
       res.redirect('/login')
     }
   }
+  logoutPost(req, res) {
+    req.session.destroy()
+    res.redirect('/')
+  }
 }
 
 module.exports = new Authentication()
